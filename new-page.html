@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1"
+    />
+    <title>MojoTip</title>
+    <meta name="title" content="MojoTip - Start Tipping Now!" />
+    <meta
+      name="description"
+      content="Download the MojoTip app and start rewarding your favorite service providers with just a tip. Fast and easy."
+    />
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mojotip.com/" />
+    <meta property="og:title" content="MojoTip - Start Tipping Now!" />
+    <meta
+      property="og:description"
+      content="Download the MojoTip app and start rewarding your favorite service providers with just a tip. Fast and easy."
+    />
+    <meta
+      property="og:image"
+      content="https://mojotip.lt/public/images/logo.png"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://mojotip.com/" />
+    <meta name="twitter:title" content="MojoTip - Start Tipping Now!" />
+    <meta
+      name="twitter:description"
+      content="Download the MojoTip app and start rewarding your favorite service providers with just a tip. Fast and easy."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mojotip.lt/public/images/logo.png"
+    />
+    <link
+      rel="icon"
+      href="https://mojotip.lt/public/images/insta-tip.png"
+      type="image/icon type"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        touch-action: none;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #1e2d3d;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+      }
+      .container {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+      }
+      .logo {
+        width: 180px;
+        margin-bottom: 30px;
+      }
+      .info-text {
+        font-size: 18px;
+        color: #a0aec0;
+        margin-bottom: 60px;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        width: 100%;
+        max-width: 302px;
+      }
+      .button-container {
+        width: 302px;
+        height: 60px;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        background-color: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: black;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .button:hover {
+        background-color: #f5f5f5;
+      }
+      .button img {
+        width: 30px;
+        height: 30px;
+        margin-right: 12px;
+        margin-left: 35px;
+      }
+      .button.play-store img {
+        width: 36px;
+        height: 39px;
+      }
+      .button.apple img {
+        width: 39px;
+        height: 39px;
+      }
+      .button-text {
+        margin-left: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .button-text .small {
+        font-size: 14px;
+        color: #000000;
+      }
+      .button-text .large {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .or {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: #a0aec0;
+        margin: 20px 0;
+        font-size: 14px;
+        width: 100%;
+        max-width: 400px;
+      }
+      .or::before,
+      .or::after {
+        content: "";
+        flex-grow: 1;
+        height: 1px;
+        background-color: #a0aec0;
+      }
+
+      .footer {
+        margin-top: 40px;
+        font-size: 16px;
+        color: #ffffff;
+        margin-bottom: 16px;
+      }
+      .background-circle {
+        position: absolute;
+        border-radius: 50%;
+        z-index: -2;
+      }
+      .circle-1 {
+        margin-top: 70px;
+        opacity: 0.1;
+        width: 108px;
+        height: 120px;
+        background-color: #34f5c5;
+        top: -20px;
+        left: -75px;
+      }
+      .circle-2 {
+        width: 106px;
+        opacity: 0.1;
+        height: 98px;
+        background-color: #34f5c5;
+        bottom: 60px;
+        right: -70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-circle circle-1"></div>
+    <div class="background-circle circle-2"></div>
+
+    <div class="container">
+      <img
+        src="https://mojotip.lt/public/images/logo.png"
+        alt="MojoTip Logo"
+        class="logo"
+      />
+      <p class="info-text">
+        Download the App <br />
+        and start your journey now!
+      </p>
+
+      <div class="buttons">
+        <div class="button-container">
+          <a
+            href="https://apps.apple.com/pk/app/mylittlestar/id1455377164"
+            class="button apple"
+          >
+            <img
+              src="https://mojotip.lt/public/images/appstore.png"
+              alt="App Store"
+            />
+            <div class="button-text">
+              <span class="small">Download on the</span>
+              <span class="large">App Store</span>
+            </div>
+          </a>
+        </div>
+        <div class="or">
+          <span class="text">or</span>
+        </div>
+
+        <div class="button-container">
+          <a
+            href="https://play.google.com/store/apps/eventdetails/4830469274062349518?pcampaignid=web_share_edp"
+            class="button play-store"
+          >
+            <img
+              src="https://mojotip.lt/public/images/playstore.png"
+              alt="Google Play"
+            />
+            <div class="button-text">
+              <span class="small">GET IT ON</span>
+              <span class="large">Google Play</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">mojotip.com</div>
+  </body>
+</html>
